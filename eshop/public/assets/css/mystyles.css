@@ -1,0 +1,130 @@
+/* Logo */
+
+/* Mainbar */
+.mainbar {
+    background: #E3E6F3;
+    padding: 10px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    /* position: sticky; */
+    top: 0;
+    left: 0;
+  }
+  
+  .navbarr {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .navbarr li{
+    list-style: none;
+    padding: 0 18px;
+    position: relative;
+    font-size: 12px;
+  }
+  
+  .navbarr li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 17px;
+    transition: 0.3s ease;
+  }
+  
+  .navbarr li a:hover {
+    color: rgb(72, 193, 240);
+  }
+  
+  .navbarr li a.active {
+    color: rgb(72, 193, 240);
+  }
+  
+  .navbarr li a.active::after,
+  .navbarr li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:  rgb(72, 193, 240);;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
+  
+
+  #mobile {
+    display: none;
+    align-items: center;
+  }
+
+  @media (max-width:799px) {
+    .mainbar {
+      background: #E3E6F3;
+      padding: 5px 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      top: 0;
+      left: 0;
+    }
+
+    .navbarr li{
+      list-style: none;
+      padding: 0 6px;
+      position: relative;
+      font-size: 10px;
+    }
+
+    .navbarr li a{
+      text-decoration: none;
+      /* font-weight: 600; */
+      color: #1a1a1a;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+
+}
+
+@media (max-width:477px) {
+  .mainbar {
+    background: #E3E6F3;
+    padding: 5px 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    top: 0;
+    left: 0;
+  }
+
+  .navbarr li{
+    list-style: none;
+    padding: 0 3px;
+    position: relative;
+  }
+
+  .navbarr li a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 8px;
+    transition: 0.3s ease;
+  }
+
+  .navbarr li a.active::after,
+  .navbarr li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:  rgb(72, 193, 240);;
+    position: absolute;
+    bottom: -2px;
+    left: 15px;
+  }
+
+  .img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+}
+
+
+ 
